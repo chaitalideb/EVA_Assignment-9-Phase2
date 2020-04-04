@@ -18,7 +18,7 @@ Delayed Policy Updates. TD3 updates the policy (and target networks) less freque
 c) Action noise regularisation
 Target Policy Smoothing. TD3 adds noise to the target action, to make it harder for the policy to exploit Q-function errors by smoothing out Q along changes in action.
 
-                                                    ![td3 Logo](/td3.png)
+                                                    ![GitHub Logo](/td3.png)
                                                     
                                                     
 # Steps involved in the TD3 Algorithm
