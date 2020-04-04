@@ -21,18 +21,26 @@ Target Policy Smoothing. TD3 adds noise to the target action, to make it harder 
   ![GitHub Logo](/td3.png)
                                                     
                                                     
-# Steps involved in the TD3 Algorithm
+## Steps involved in the TD3 Algorithm
 
-  # 1 : Initialize
+  ## 1 : Initialize
         All modules are imported and initialized.
   
-  # 2 : Creating Replay Buffer
-  
-  
-  
-  
-  
-   ![Replay](replay.png)
+  ## 2 : Replay Buffer
+   Replay Buffer or Experience replay is where we store the agent's experiences et=(st,at,rt,st+1)
+This means instead of running Q-learning on state/action pairs as they occur during simulation or actual experience, the system stores the data discovered for (state, action, reward, next_state) in a large table.
+
+It has two methods, one is to Add Transition to Replay Buffer and the other method is Sample where list of transitions are randomly selected.
+
+                                  ![Replay](replay.png)
+                                  
+ ## 3 : Define Actor
+ 
+ 
+ ## 4 : Define Critic
+ 
+ 
+ ## 5  : Define TD3 Class
 
 
 
