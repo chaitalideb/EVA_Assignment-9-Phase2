@@ -71,7 +71,7 @@ To train the actor network, use the following equation:
 
 ∇θμJ≈Est~ρβ[∇aQ1(s,a)|s=st,a=μ(st)⋅∇θμμ(s)|s=st]
 
-Use the actor’s online network to get the action mean values using the current states as the inputs. Then, use the first critic’s online network in order to get the gradients of the critic output with respect to the action mean values ∇aQ1(s,a)|s=st,a=μ(st). Using the chain rule, calculate the gradients of the actor’s output, with respect to the actor weights, given ∇aQ(s,a). Finally, apply those gradients to the actor network.
+Use the actor’s  network to get the action mean values using the current states as the inputs. Then, use the first critic’s online network in order to get the gradients of the critic output with respect to the action mean values ∇aQ1(s,a)|s=st,a=μ(st). Using the chain rule, calculate the gradients of the actor’s output, with respect to the actor weights, given ∇aQ(s,a). Finally, apply those gradients to the actor network.
  
  
 
