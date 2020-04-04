@@ -32,7 +32,8 @@ This means instead of running Q-learning on state/action pairs as they occur dur
 
 It has two methods, one is to Add Transition to Replay Buffer and the other method is Sample where list of transitions are randomly selected.
 
-                                  ![Replay](replay.png)
+  ![Replay](replay.png)
+  
                                   
  ## 3 : Define Actor
  
