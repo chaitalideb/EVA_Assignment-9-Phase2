@@ -50,12 +50,27 @@ Actor model is a neural network which has state as input and action as output.It
  ## 5  : Define TD3 Class
  Train the agent with two Q-value functions.
  During training, a TD3 agent:
-
-Updates the actor and critic properties at each time step during learning.
-
-Stores past experience using a circular experience buffer. The agent updates the actor and critic using a mini-batch of experiences randomly sampled from the buffer.
-
+   Updates the actor and critic properties at each time step during learning.
+   Stores past experience using a circular experience buffer. The agent updates the actor and critic using a mini-batch of experiences   randomly sampled from the buffer.
 Perturbs the action chosen by the policy using a stochastic noise model at each training step.
+
+  ## Steps involved in this Class are as follows:-
+  
+  a) Initialize Actor,Actor Target, Critic and Critic Target
+  b) Select Action
+  c) Train
+     Start by sampling a batch of transitions from the experience replay
+     To train the two critic networks, use the following targets:
+
+yt=r(st,at)+γ⋅mini=1,2Qi(st+1,μ(st+1)+[N(0,σ2)]MAX_NOISEMIN_NOISE)
+
+First run the actor target network, using the next states as the inputs, and get μ(st+1). Then, add a clipped gaussian noise to these actions, and clip the resulting actions to the actions space. Next, run the critic target networks using the next states and μ(st+1)+[N(0,σ2)]MAX_NOISEMIN_NOISE, and use the minimum between the two critic networks predictions in order to calculate yt according to the equation above. To train the networks, use the current states and actions as the inputs, and yt as the targets.
+
+To train the actor network, use the following equation:
+
+∇θμJ≈Est~ρβ[∇aQ1(s,a)|s=st,a=μ(st)⋅∇θμμ(s)|s=st]
+
+Use the actor’s online network to get the action mean values using the current states as the inputs. Then, use the first critic’s online network in order to get the gradients of the critic output with respect to the action mean values ∇aQ1(s,a)|s=st,a=μ(st). Using the chain rule, calculate the gradients of the actor’s output, with respect to the actor weights, given ∇aQ(s,a). Finally, apply those gradients to the actor network.
  
  
 
