@@ -1,4 +1,4 @@
-# EVA_Assignment-9-Phase2 (P2_S9)
+# EVA_Assignment-9-Phase2 (P2_S9) (Deep Reinforcement Learning)
 
 ## Twin Delayed Deep Deterministic Policy Gradient (TD3)
 
