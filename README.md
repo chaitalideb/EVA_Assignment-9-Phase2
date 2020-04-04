@@ -44,6 +44,14 @@ Actor model is a neural network which has state as input and action as output.It
  
  
  ## 5  : Define TD3 Class
+ 
+ ## 
+ ## Select and carry out action with exploration noise
+Store transitions
+Update critic
+Update actor
+Update target networks
+Repeat until sentient
 
 
 
