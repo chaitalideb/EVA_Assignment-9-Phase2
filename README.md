@@ -50,8 +50,8 @@ Actor model is a neural network which has state as input and action as output.It
 ## Store transitions
 ## Update critic
 ## Update actor
-Update target networks
-Repeat until sentient
+## Update target networks
+## Repeat until sentient
 
 
 
