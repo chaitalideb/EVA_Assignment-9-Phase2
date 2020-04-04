@@ -42,6 +42,10 @@ Actor model is a neural network which has state as input and action as output.It
  
  ## 4 : Define Critic
  
+ Critic class predicts Q value based on avtion.
+ Two Critic Neural networks and Two Critic Target Neural networks.
+ The critics forward() method returns the Q values for both critics to be used later. 
+ 
  
  ## 5  : Define TD3 Class
  
