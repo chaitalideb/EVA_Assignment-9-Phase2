@@ -48,6 +48,14 @@ Actor model is a neural network which has state as input and action as output.It
  
  
  ## 5  : Define TD3 Class
+ Train the agent with two Q-value functions.
+ During training, a TD3 agent:
+
+Updates the actor and critic properties at each time step during learning.
+
+Stores past experience using a circular experience buffer. The agent updates the actor and critic using a mini-batch of experiences randomly sampled from the buffer.
+
+Perturbs the action chosen by the policy using a stochastic noise model at each training step.
  
  
 
