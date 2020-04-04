@@ -37,6 +37,8 @@ It has two methods, one is to Add Transition to Replay Buffer and the other meth
                                   
  ## 3 : Define Actor
  
+Actor model is a neural network which has state as input and action as output.It is updated by backpropagation. Target Actor model is another neural network which is similar to Actor model but it is updated less frequently and mainly used for stability. Target Actor Model is updated using Polyak averaging from the Actor model
+ 
  
  ## 4 : Define Critic
  
