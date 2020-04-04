@@ -56,9 +56,10 @@ Perturbs the action chosen by the policy using a stochastic noise model at each 
 
   ## Steps involved in this Class are as follows:-
   
-  a) Initialize Actor,Actor Target, Critic and Critic Target
-  b) Select Action
-  c) Train
+  ## a) Initialize Actor,Actor Target, Critic and Critic Target
+  ## b) Select Action
+  ## c) Train
+     
      Start by sampling a batch of transitions from the experience replay
      To train the two critic networks, use the following targets:
 
