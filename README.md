@@ -32,7 +32,7 @@ Target Policy Smoothing. TD3 adds noise to the target action, to make it harder 
   
   
   
-    ![GitHub Logo](/td3.png)
+    ![GitHub Logo](/replay.png)
 
 
 
