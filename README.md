@@ -9,7 +9,7 @@ TD3 focusses on reducing the overestimation of bias.
 Following are the main features of TD3 :- 
 a) Using a pair of critic networks
 
-Clipped Double-Q Learning. TD3 learns two Q-functions instead of one so its called TWIN, and uses the smaller of the two Q-values to form the targets in the Bellman error loss functions.
+Clipped Double-Q Learning. TD3 learns two Q-functions instead of one so its called TWIN, and uses the smaller of the two Q-values to form the targets in the Bellman error loss functions. It takes the smallest value of the two critic networks.
 
 b) Delayed updates of the actor
 
@@ -24,8 +24,15 @@ Target Policy Smoothing. TD3 adds noise to the target action, to make it harder 
 # Steps involved in the TD3 Algorithm
 
   # 1 : Initialize
+        All modules are imported and initialized.
   
   # 2 : Creating Replay Buffer
+  
+  
+  
+  
+  
+    ![GitHub Logo](/td3.png)
 
 
 
